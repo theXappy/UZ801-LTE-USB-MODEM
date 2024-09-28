@@ -25,9 +25,11 @@ A typical request contains a json like this:
 {"funcNo":1022,"mode":"1"}
 ```
 
-I started enumerating the commands (the `funcNo`) + visiting some pages and sniffing which commands they organically send.
-(2nd one was important since some commands have arguments (like "mode" in the example above) that the dongle will refuse to answer to if they're missing.
-Here's my current understanding of all commands:
+Below is a table with all implemented `funcNo` values and their meanings.  
+I documented some by simply using the Web Interface and sniffing with Chrome.  
+Others I just sent with Postman & blackbox'd the response.
+The rest I figured by finding the handler in the web server APK* which I fetched from the device.   
+(* had to figure out ADB first, which I randomally activated with command `2001`).
 
 |funcNo|Description|Arguments         |Example Req|Example Resp| Related URL |
 |------|-----------|------------------|-----------|------------|-------------|
