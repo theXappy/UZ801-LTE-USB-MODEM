@@ -21,6 +21,6 @@ USB Hardware IDs: `VID_05C6 PID_90B6`
    - The device is running Android KitKat (4.4.4, SDK 19) so neither scrcpy nor Vysor work.
 7. [View & Control Device "Display" via adbcontrol](https://github.com/AlienWolfX/UZ801-USB_MODEM?tab=readme-ov-file#view-device-display) (by AlienWolfX)
 8. [Change UI Language to English](https://www.youtube.com/watch?v=8krFZxOXuiE)
-   - I Tried u0d7i's way and it didn't work for me. Using the Settings app did.
+   - I tried u0d7i's way and it didn't work for me. Using the Settings app did.
 10. [SuperSU, EDL, FW Dump/Restore, Installing OpenWRT/Debian](https://github.com/AlienWolfX/UZ801-USB_MODEM?tab=readme-ov-file#firmware-dump-and-restore) (by AlienWolfX)
 11. [Another EDL Guide, Lots of hardware/software documentations](https://github.com/u0d7i/uz801) (by u0d7i)
