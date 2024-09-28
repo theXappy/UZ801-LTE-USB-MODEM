@@ -6,7 +6,9 @@
 ## Intro
 I bought this "4G LTE USB Dongle WiFi" from AliExpress around 2023.  
 After playing with it for a while, I decied to document all the quirks/tricks I've learned.  
-I'm not the first one to research this thing, so some of the link below are to other GH repos by other, smarter people.
+I'm not the first one to research this thing, so some of the link below are to other GH repos by other, smarter people.  
+SoC seems to be: `Qualcomm Snapdragon 410 (MSM8916)`  
+USB Hardware IDs: `VID_05C6 PID_90B6`
 
 ## Table of Contents
 1. [Blackbox Web App UI + API](Web_Interface.md)
