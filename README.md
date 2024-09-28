@@ -18,7 +18,7 @@ But the dongle itself connected and I know that because later I ran `curl` direc
 
 None of the other menus are interesting and won't give you any clues of escalating to the inner stuff of the dongle.
 
-## Web Pentesting
+## AJAX Enumeration (API Pentesting)
 What I notices is that many pages in the web app fetch information by sending requests to `http://192.168.100.1/ajax`.
 A typical request contains a json like this:
 ```json
@@ -71,4 +71,8 @@ Here's my current understanding of all commands:
 | 1055 | Commit MAC Filtering ? | ?                          | - | - | - |
 | 1056-1999 | Don't Exist | -                                | - | - | - |
 | 2000 | Reboot Bootloader | -                               |```{"funcNo":2000}```|```NOTHING! Device Reboots```| http://192.168.100.1/reboot-bootloader.html |
-| 2000 | Enable ADB | -                                      |```{"funcNo":2001}```|```NOTHING! Device Reboots```| http://192.168.100.1/usbdebug.html |
+| 2001 | Enable ADB | -                                      |```{"funcNo":2001}```| ? | http://192.168.100.1/usbdebug.html |
+| 2002 | Get SIM Slot ? | -                                  |```{"funcNo":2002}```|```{"results":[{"simslot":"1"}],"error_info":"none","flag":"1"}``` |
+| 2003 | Set SIM Slot ? | -                                  |```{"funcNo":2003,"simslot":"1","password":"abc"}```|```{"error_info":"password error!","flag":"0"}``` | Password is hard-coded to `admin8888`, does nothing regardless.|
+| 2004 | Change IMEI | -                                     |```{"funcNo":2004, "imei":"123456789012345"}```|```{"error_info":"none","flag":"1"}``` |
+
