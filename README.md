@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5dd36e2c-2999-4bda-86d7-e5496d736819)# Web App
+# Web App
 First thing the manual tells you is to configure this stick using the web app.  
 Once you insert the device to your (Windows) PC You'll see a new "RNDIS" network inerface:  
 ![{A93E26E2-7547-44E7-A486-CE7AEB96CE89}](https://github.com/user-attachments/assets/a52ea109-4e89-468e-85a3-aa4b71642219)  
