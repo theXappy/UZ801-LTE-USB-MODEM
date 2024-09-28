@@ -31,7 +31,7 @@ Others I just sent with Postman & blackbox'd the response.
 The rest I figured by finding the handler in the web server APK* which I fetched from the device.   
 (* had to figure out ADB first, which I randomally activated with command `2001`).
 
-|funcNo|Description|Arguments         |Example Req|Example Resp| Related URL |
+|funcNo|Description|Arguments         |Example Req|Example Resp| Related URL/Remarks |
 |------|-----------|------------------|-----------|------------|-------------|
 |0-999 | Don't exist| -               | -         | -          | - |
 | 1000 | Login     | "username", "password"                  |```{"funcNo":1000,"username":"admin","password":"admin"}```|```{"results":[{"net_mode":0,"fwversion":"UZ801-V3.4.3","conn_mode":"1","imei":"8666800660#####"}],"error_info":"none","flag":"1"}```| - |
