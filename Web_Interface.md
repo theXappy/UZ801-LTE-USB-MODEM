@@ -47,8 +47,8 @@ The rest I figured by finding the handler in the web server APK* which I fetched
 | 1010 | Set WiFi Enc Info | -                               |```{"funcNo":1010,"encryp_type":"4","pwd":"1234567890"}: ```|```{"error_info":"none","flag":"1"}```| - |
 | 1011 | Get DHCP Info | -                                   |```{"funcNo":1011}```|```{"results":[{"device_arr":[],"dns1":"8.8.8.8","dns2":"8.8.8.8","range_low":"192.168.100.100","range_high":"192.168.100.200","ip":"192.168.100.1"}],"error_info":"none","flag":"1"}```| - |
 | 1012 | Set DHCP Info | "dns1", "dns2", more?               |```{"funcNo":1012,"dns1":"8.8.8.8","dns2":"8.8.8.8"}```|```{"error_info":"none","flag":"1"}```| - |
-| 1013 | Reboot Device | -                                   |```{"funcNo":1013}```|```NOTHING! Device Reboots```| - |
-| 1014 | Restore Device(?) | -                               |```{"funcNo":1014}```|```{"error_info":"none","flag":"1"}```| - |
+| 1013 | Reboot Device | -                                   |```{"funcNo":1013}```|```NOTHING! Device Reboots```| http://192.168.100.1/deviceOperation.html |
+| 1014 | Factory Reset | -                               |```{"funcNo":1014}```|```{"error_info":"none","flag":"1"}```| http://192.168.100.1/deviceOperation.html |
 | 1015 | Get SIM Info | -                                    |```{"funcNo":1015}```|```{"results":[{"sim_status":"Absent"}],"error_info":"none","flag":"1"}```| - |
 | 1016 | Get APNs Info | -                                   |```{"funcNo":1016}```|```{"results":[{"info_arr":[],"profile_num":0}],"error_info":"none","flag":"1"}```| - |
 | 1017 | Set APN Info | -                                    |```{"funcNo":1017,"no":"1","name":"a","apn":"b","user":"c","pwd":"d","auth":"0"}: ```|```{"error_info":"none","flag":"1"}```| - |
