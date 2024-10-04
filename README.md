@@ -49,5 +49,6 @@ Part=206  version=1.0
 ### 🪄 Firmware Backup/Flashing
 1. [SuperSU, EDL, FW Dump/Restore, Installing OpenWRT/Debian](https://github.com/AlienWolfX/UZ801-USB_MODEM?tab=readme-ov-file#firmware-dump-and-restore) (by AlienWolfX)
 2. [Another EDL Guide, Lots of hardware/software documentations](https://github.com/u0d7i/uz801) (by u0d7i)
+3. [OpenStick: Install Debian and bridge LTE to WiFi/rndis](https://www.kancloud.cn/handsomehacker/openstick/2636505) [[Repo](https://github.com/OpenStick/OpenStick)] (by handsomehacker)
 
 
