@@ -9,6 +9,22 @@ After playing with it for a while, I decied to document all the quirks/tricks I'
 I'm not the first one to research this thing, so some of the link below are to other GH repos by other, smarter people.  
 SoC seems to be: `Qualcomm Snapdragon 410 (MSM8916)`  
 USB Hardware IDs: `VID_05C6 PID_90B6`
+Modem Identifiers (fetched with AT commands):
+```
+ATI
+Manufacturer: QUALCOMM INCORPORATED
+Model: 4094
+Revision: UZ801_V01R01B06  1  [Sep 07 2015 23:00:00]
+SVN: 01
+IMEI: +CGSN:8666800XXXXXXXX
++GCAP: +CGSM,+DS,+ES
+
+AT^SWVER
+UZ801_2.0.0
+
+AT^HWVER
+Part=206  version=1.0
+```
 
 ## Table of Contents
 ### 🌐 Web App & ADB
