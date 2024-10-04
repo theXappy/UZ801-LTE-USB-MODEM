@@ -11,16 +11,25 @@ SoC seems to be: `Qualcomm Snapdragon 410 (MSM8916)`
 USB Hardware IDs: `VID_05C6 PID_90B6`
 
 ## Table of Contents
-1. [Blackbox Web App UI + API](Web_Interface.md)
-2. [Whitebox Web Server via ADB exploration](Web_Server_ADB_exploration.md)
-3. [AT Commands via Modem Device](Modem_AT_Commands.md)
-4. [Sniffing 3G/4G Traffic via QCSuper](https://github.com/P1sec/QCSuper) (by P1sec).
+### 🌐 Web App & ADB
+1. Blackbox Web App UI + AP [[Link](Web_Interface.md)]
+2. Whitebox Web Server via ADB exploration [[Link](Web_Server_ADB_exploration.md)]
+3. Replacing the Web Server (or any APK) but abusing test-keys [[Part 1](https://www.blinkenlights.ch/ccms/posts/aliexpress-lte-1/)] [[Part 2](https://www.blinkenlights.ch/ccms/posts/aliexpress-lte-2/)]] (by adrian-bl)
+   - Their device doesn't look the same (+ I had root on by default) by mine also deployed test-keys so the same logic applies.
+
+### ☎️ Modem
+1. Modem drivers for Windows + AT Commands communication [Link](Modem_AT_Commands.md)
+2. Sniffing 3G/4G Traffic via QCSuper & Wireshark [Link](https://github.com/P1sec/QCSuper) (by P1sec).
    - Just run the `./qcsuper.py --adb --wireshark-live` afte enabling ADB (which enables DIAG as well, I think)
-5. [Screenshots + Disabling Screen Timeout](https://github.com/u0d7i/uz801) (by u0d7i)
+
+### 📱Screen Control
+1. [Screenshots + Disabling Screen Timeout](https://github.com/u0d7i/uz801) (by u0d7i)
    - Don't use the screenshots manually, use the next link (adbcontrol) for 2-way interactions.
    - The device is running Android KitKat (4.4.4, SDK 19) so neither scrcpy nor Vysor work.
-7. [View & Control Device "Display" via adbcontrol](https://github.com/AlienWolfX/UZ801-USB_MODEM?tab=readme-ov-file#view-device-display) (by AlienWolfX)
-8. [Change UI Language to English](https://www.youtube.com/watch?v=8krFZxOXuiE)
+2. [View & Control Device "Display" via adbcontrol](https://github.com/AlienWolfX/UZ801-USB_MODEM?tab=readme-ov-file#view-device-display) (by AlienWolfX)
+3. [Change UI Language to English](https://www.youtube.com/watch?v=8krFZxOXuiE)
    - I tried u0d7i's way and it didn't work for me. Using the Settings app via remote control did.
-10. [SuperSU, EDL, FW Dump/Restore, Installing OpenWRT/Debian](https://github.com/AlienWolfX/UZ801-USB_MODEM?tab=readme-ov-file#firmware-dump-and-restore) (by AlienWolfX)
-11. [Another EDL Guide, Lots of hardware/software documentations](https://github.com/u0d7i/uz801) (by u0d7i)
+
+### 🪄 Firmware Backup/Flashing
+1. [SuperSU, EDL, FW Dump/Restore, Installing OpenWRT/Debian](https://github.com/AlienWolfX/UZ801-USB_MODEM?tab=readme-ov-file#firmware-dump-and-restore) (by AlienWolfX)
+2. [Another EDL Guide, Lots of hardware/software documentations](https://github.com/u0d7i/uz801) (by u0d7i)
