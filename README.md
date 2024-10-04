@@ -31,7 +31,7 @@ Part=206  version=1.0
 1. [Blackbox Web App UI + AP](Web_Interface.md)
 2. [Whitebox Web Server via ADB exploration](Web_Server_ADB_exploration.md)
 3. [Replacing the Web Server (or any APK) but abusing test-keys (Part 1)](https://www.blinkenlights.ch/ccms/posts/aliexpress-lte-1/) [[Part 2](https://www.blinkenlights.ch/ccms/posts/aliexpress-lte-2/)] (by adrian-bl)
-   - Their device doesn't look the same (+ I had root on by default) by mine also deployed test-keys so the same logic applies.
+   - Their device doesn't look the same (+ I had root on by default) but mine also deployed test-keys so the same logic applies.
 
 ### ☎️ Modem
 1. [Modem drivers for Windows + AT Commands communication](Modem_AT_Commands.md)
