@@ -28,7 +28,7 @@ Part=206  version=1.0
 
 ## Table of Contents
 ### 🌐 Web App & ADB
-1. [Blackbox Web App UI + AP](Web_Interface.md)
+1. [Blackbox Web App UI + API Research](Web_Interface.md)
 2. [Whitebox Web Server via ADB exploration](Web_Server_ADB_exploration.md)
 3. [Replacing the Web Server (or any APK) by abusing test-keys (Part 1)](https://www.blinkenlights.ch/ccms/posts/aliexpress-lte-1/) [[Part 2](https://www.blinkenlights.ch/ccms/posts/aliexpress-lte-2/)] (by adrian-bl)
    - Their device doesn't look the same (+ I had root on by default) but mine also deployed test-keys so the same logic applies.
