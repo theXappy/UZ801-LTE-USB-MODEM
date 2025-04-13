@@ -96,3 +96,11 @@ Finding the AJAX commands handler was quite simple. Searching for any of the non
 ![{A49F442A-3B69-43BC-95C4-03DDB2D81833}](https://github.com/user-attachments/assets/133d73ca-d582-4bd3-a803-019db55996f9)
 Eventaully this function helped compose the complete `funcNo` list found in [Web_Interface.md](Web_Interface.md#ajax-enumeration-api-pentesting)
 
+
+Interestingly, this is how "udb debugging" is implemented.
+Boils down to running:
+```
+setprop persist.sys.usb.config rndis,serial_smd,diag,adb
+```
+![{B986D053-065E-4D97-876E-923C64F576E4}](https://github.com/user-attachments/assets/b1275b8a-c024-4b68-8693-e369c745000f)
+
