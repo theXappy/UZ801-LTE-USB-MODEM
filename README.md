@@ -47,8 +47,34 @@ Part=206  version=1.0
    - I tried u0d7i's way and it didn't work for me. Using the Settings app via remote control did.
 
 ### 🪄 Firmware Backup/Flashing
-1. [SuperSU, EDL, FW Dump/Restore, Installing OpenWRT/Debian](https://github.com/AlienWolfX/UZ801-USB_MODEM?tab=readme-ov-file#firmware-dump-and-restore) (by AlienWolfX)
+1. [SuperSU, EDL, FW Dump/Restore, Installing OpenWRT/Debian](https://github.com/AlienWolfX/UZ801-USB_MODEM) (by AlienWolfX)
 2. [Another EDL Guide, Lots of hardware/software documentations](https://github.com/u0d7i/uz801) (by u0d7i)
 3. [OpenStick: Install Debian and bridge LTE to WiFi/rndis](https://www.kancloud.cn/handsomehacker/openstick/2636505) [[Repo](https://github.com/OpenStick/OpenStick)] (by handsomehacker)
 
+### ⚡ UART
+UART pins are arrange in a row, on thesime without the SIM slot.
+Mapping, assuming the USB connector points down:  
+* Topmost: VCC
+* 2nd from top: GND   
+* 2nd from bottom: TX
+* Bottommost: RX  
+![uart](https://github.com/user-attachments/assets/421b63f6-ae34-4b81-8250-f27c9c5bff09)
 
+Connect using default parameters in PuTTY except:
+* Session -> Baud Rate: 115200
+* Connection -> Serial -> Flow Control: None
+You'll be greated with a shell, the user is `shell` and has the following `id` values:
+```
+shell@msm8916_32_512:/ $ id
+uid=2000(shell) gid=1007(log) context=u:r:init_shell:s0
+```
+In comparison, ADB shell defaults to the `root` user and these values:
+```
+root@msm8916_32_512:/ # id
+uid=0(root) gid=0(root) context=u:r:shell:s0
+```
+Anyway, using `su root` from the `shell` user just switches to root ¯\\\_(ツ)_/¯.
+
+#### EDL via UART pins
+Previously, [AlienWolfx's repo](https://github.com/AlienWolfX/UZ801-USB_MODEM) used to mentiond that you can ented "EDL mode" by shorting the GND and VCC connector.  
+I didn't try that myself but that info might be helpful to some future reader.
