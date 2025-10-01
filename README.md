@@ -52,7 +52,7 @@ Part=206  version=1.0
 3. [OpenStick: Install Debian and bridge LTE to WiFi/rndis](https://www.kancloud.cn/handsomehacker/openstick/2636505) [[Repo](https://github.com/OpenStick/OpenStick)] (by handsomehacker)
 
 ### ⚡ UART
-UART pins are arrange in a row, on thesime without the SIM slot.
+UART pins are arranged in a row, on the side without the SIM slot.  
 Mapping, assuming the USB connector points down:  
 * Topmost: VCC
 * 2nd from top: GND   
